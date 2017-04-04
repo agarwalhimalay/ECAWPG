@@ -1,0 +1,37 @@
+<ion-view view-title="">
+  <ion-content  scroll="">
+    <form  ng-submit="loginSubmit();" >
+    <div class="emailform">
+       <div class="list">
+        
+        <label class="item item-input textbox1 boxsize"><br>
+        <i class="icon ion-person customicon"></i>
+        
+        <input type="password" placeholder="Old Password" name="user.contactNumber" class="font1" ng-model="user.oldpassword" required>
+        </label>
+        <label class="item item-input textbox1 boxsize"><i class="icon ion-locked customicon"></i>
+      
+        <input type="password" placeholder="New Password" name="user.password" class="font1" ng-model="user.newpassword" required show-hide-input>
+        </label>
+         <label class="item item-input textbox1 boxsize"><i class="icon ion-locked customicon"></i>
+      
+        <input type="password" placeholder="Confirm Password" name="user.password" class="font1" ng-model="user.Confirmpassword" required show-hide-input>
+        </label>
+      </div>
+    </div>
+
+    <button class="button button-full loginbtn" type="submit"> Submit </button>
+
+    <button class="button button-full loginbtn forget-pass" type="submit" ui-sref="auth.login" > cancel </button>
+
+      
+    </form>
+
+    
+   
+      
+
+  
+  </div>  </div>
+  </ion-content>
+</ion-view>

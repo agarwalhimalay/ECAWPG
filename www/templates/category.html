@@ -1,0 +1,34 @@
+
+<ion-view view-title="Categories">
+  <ion-content class="category">
+ 
+<!--  <div class="col no-padding">
+ <ion-card>
+ 
+ <ion-list ng-repeat="data in categories">
+
+  <img ng-src="{{data.bgImage}}"/>
+ <ui-sref="app.products"><ul><li>
+
+ <h2>{{data.categoryName}}</h2></li></ul></ion-item>
+ </ion-list>	
+ </ion-card>
+ </div> -->
+ 
+<div class="row padding-tb-30" style="flex-wrap: wrap">
+<div class = "col-33 categbg1 j-margin text-center" ng-repeat="data in categories" ui-sref="app.products({categoryId:data.id})" style="background:url({{imageUrlHome}}{{data.bgImage}})"><a href="" class="text-center"><img src="{{imageUrlHome}}{{data.iconImage}}" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20">{{data.categoryName}}</div></p>
+   <!-- <div class = "col categbg2"><a href=""><img src="img/beauty-icon.png" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20">Beauty</div>
+    <div class = "col categbg3"><a href=""><img src="img/electronics-icon.png" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20">Electronics</div> -->
+    </div>
+
+  <!--  <div class="row padding-tb-30">
+<div class = "col categbg1"><a href=""><img src="img/fashion.png" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20">Fashion</div>
+   <div class = "col categbg2"><a href=""><img src="img/beauty-icon.png" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20">Beauty</div>
+    <div class = "col categbg3"><a href=""><img src="img/electronics-icon.png" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20">Electronics</div>
+    </div> -->
+
+ </ion-content>
+ </ion-view>
+
+
+ <!-- <div class = "col categbg1"><a href=""><img src="img/cate2.png" class="categoryimgs Ak-res-img"></a></div> -->

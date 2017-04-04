@@ -1,0 +1,119 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-dark" align-title="left">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+<ion-nav-view name="menuContent"></ion-nav-view>
+
+    <!-- TABS -->
+
+   <!--  <ion-tabs class="tabs tabs-dark tabs-icon-top">
+
+      <ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home-outline" href="#/app/home"><!-- #/app/search -->
+        <!-- <ion-nav-view name="tab-search"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Category" icon-off="ion-ios-pricetag-outline" icon-on="ion-ios-pricetag-outline" href="#/app/category"> --><!-- #/app/browse -->
+       <!--  <ion-nav-view name="tab-browse"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Contact" icon-off="ion-person" icon-on="ion-person" href="#/app/contactdetails"> -->
+        <!-- <ion-nav-view name="tab-playlists"></ion-nav-view> -->
+      <!-- </ion-tab>
+	  <ion-tab title="More" icon-off="ion-android-more-horizontal" icon-on="ion-android-more-horizontal" href="#/app/more"> --><!-- #/app/playlists -->
+      <!--   <ion-nav-view name="tab-playlists"></ion-nav-view>
+      </ion-tab>
+
+    </ion-tabs> -->
+
+
+  </ion-side-menu-content>
+
+   <!-- Side Menu (left) -->
+  <ion-side-menu>
+    <!-- <ion-header-bar class="bar-light">
+      <h1 class="title text-center"></h1>
+    </ion-header-bar> -->
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/home">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/app/profile">
+         Profile
+        </ion-item>
+      
+        <ion-item menu-close href="#/app/aboutus">
+          About Us
+        </ion-item>
+        <ion-item menu-close href="#/app/policies">
+         Privacy Policy
+        </ion-item>
+         
+        <ion-item menu-close href="#/app/help and support">
+         Help And Support
+        </ion-item>
+        <ion-item menu-close href="#/app/contactdetails">
+        Contact Us
+        </ion-item>
+
+      <ion-item menu-close href="#/app/changepassword">
+        Change Password
+        </ion-item>
+          <ion-item menu-close href="#/app/logout" href="auth/login">
+          Log Out
+        </ion-item>
+        
+       
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+
+
+<ion-footer-bar>
+    
+
+    <ion-tabs class="tabs tabs-dark tabs-icon-top">
+
+      <ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home-outline" href="#/app/home">
+        <ion-nav-view name="tab-search"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Products" icon-off="ion-ios-pricetag-outline" icon-on="ion-ios-pricetag-outline" href="#/app/category">
+        <ion-nav-view name="tab-browse"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Contact" icon-off="ion-person" icon-on="ion-person" href="#/app/contactdetails">
+        <ion-nav-view name="tab-playlists"></ion-nav-view>
+      </ion-tab>
+   <ion-tab title="Profile" icon-off="ion-person" icon-on="ion-person" href="#/app/profile">
+        <ion-nav-view name="tab-playlists"></ion-nav-view>
+      </ion-tab>
+
+    </ion-tabs>
+
+
+</ion-footer-bar>
+<!-- 
+<div class="tabs tabs-icon-only">
+        <div class="tabs tabs-icon-only">
+        <a nav-clear class="tab-item disable-user-behavior active" title="Home" nav-clear ui-sref="snd.home">
+          <i class="icon ion-home"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+        </a>
+        <a nav-clear class="tab-item disable-user-behavior" title="Chat" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline" ui-sref="snd.chat">
+          <i class="icon ion-chatbubbles"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+        </a>
+        <a nav-clear class="tab-item disable-user-behavior" title="Drink" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline" ui-sref="snd.drink">
+          <i class="icon ion-wineglass"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+        </a>
+      </div>
+    </div> -->

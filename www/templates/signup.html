@@ -1,0 +1,92 @@
+<ion-view cache-view="false" view-title="">
+    <ion-content class="signupbg " scroll="">
+
+<div class="bar no-border bar-header Ak-color-zero">
+   <button class="button icon ion-ios-arrow-left button-clear colfff"  type="submit" ui-sref="auth.login"> </button>
+</div>
+        <ion-card>
+            <ion-card-content>
+                <div class=" Ak-text-center padding-tb-10 ">
+                    <p class="Ak-color-fff padding-tb-30 text-center signupp">Sign Up</p>
+                </div>
+            </ion-card-content>
+        </ion-card>
+
+        <form ng-submit="signup()" novalidate="">
+
+            <div class="card no-margin no-padding signupformbg">
+
+                <div class="list padding-lr-30 padding-tb-10">
+                    <div class="form-group forPositionReletive">
+                         
+                            <input type="text" maxlength="30" placeholder="First Name" required pattern="[A-Za-z]+" class="inputtext" ng-model="user.firstName" required>
+                            <div class="ForAbsulute">
+                                <i class="icon ion-ios-person-outline Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+
+                        </div>
+
+
+                    <div class="form-group">
+                       <div class="form-group forPositionReletive">
+                
+                                <input type="text" maxlength="30" placeholder="Last Name" required pattern="[A-Za-z]+" class="inputtext" ng-model="user.lastName" required>
+                               
+                                <div class="ForAbsulute">
+                                    <i class="icon ion-ios-person-outline Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+
+                            </div>
+                    </div>
+
+                    <div class="form-group">
+ <div class="form-group forPositionReletive ">                    
+                        <input type="email" placeholder="Email" name="mailId" class="inputtext" ng-model="user.mailId" required>
+                        <div class="ForAbsulute">
+                            <i class="icon ion-email Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <!--   </label> -->
+                    </div>
+
+                    </div>
+                       
+                        <div class="form-group">
+ <div class="form-group forPositionReletive">
+                               
+                                    <input type="Number" required pattern="[7-9]{1}[0-9]{9}" placeholder="Phone Number" name="contactNumber" class="inputtext" ng-model="user.contactNumber" required>
+
+                                    <div class="ForAbsulute">
+                                        <i class="icon ion-android-call Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>
+
+                                </div>
+                        </div>
+                            
+
+                            <div class="form-group">
+                                <div class="form-group forPositionReletive">
+                   
+                            <input type="password" required minlength="8" maxlength="20" pattern="^(?=.*\d)(?=.*[a-zA-Z]).{8,30}$"  placeholder="Password" class="inputtext" name="password" ng-model="user.password" required>
+
+                            <div class="ForAbsulute">
+                                <i class="icon ion-ios-locked-outline Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>  
+
+        <div class="margin-lr-30 signupbtn ">
+            <button class="button button-block button-clear signupbtn" type="submit">Sign Up</button>
+        </div>
+               <!-- <div class="margin-lr-30 signupbtn margin-b-5">
+                <button class="button button-block button-clear signupbtn" type="submit" ui-sref="auth.login">Back</button>
+            </div> -->
+          
+      </form>
+
+    </ion-content>
+</ion-view>

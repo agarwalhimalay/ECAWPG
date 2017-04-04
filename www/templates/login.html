@@ -1,0 +1,63 @@
+<ion-view view-title="">
+  <ion-content class="loginbg" scroll="false">
+  <!--   <h1>login my page</h1> -->
+
+    <ion-card>
+    <ion-card-content>
+    <div class="img_logo_div text-center padding-tb-15">
+      <img src="img/logo.png" class="img_logo">
+    </div>
+    </ion-card-content>
+  </ion-card>
+  <form ng-submit="login()">
+<!-- 
+  <div class="card list" style="width: 120vw; margin-left: -10px;"> -->
+<div class="card no-margin no-padding trpcolor">
+  <div class="list padding-30-top padding-lr-30">
+  <div class="form-group forPositionReletive">
+   <input type="email"  placeholder="Email" name="mailId" class="inputtext" ng-model="user.mailId" required>
+   <div class="ForAbsulute">
+       <i class="icon ion-email Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+   </div>
+   </div>
+<div class="form-group forPositionReletive">
+
+  
+   <input type="Password" minlength="8" maxlength="30" placeholder="Password" class="inputtext" name="password" ng-model="user.password" required>
+    <div class="ForAbsulute">
+     <i class="icon ion-locked Ak-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+   </div>
+   </div>
+</div>
+</div>
+<div class="margin-lr-30 loginbtn margin-t-30">
+<button class="button button-block button-clear loginbtn" type="submit">Sign In</button>
+</div>
+</form>
+
+<button class="button button-assertive button-clear Ak-float-right margin-lr-30" ui-sref="auth.forgot-password">
+   Forgot Password?
+</button>
+
+
+<div class="padding-tb-10">
+      <img src="img/orimg.png" class="Ak-res-img">
+  </div>
+
+<div class = "row loginrow no-padding">
+<div class = "col"> </div>
+<div class = "col"> </div>
+   <div class = "col" id = "fb-root">    <img src="img/facebook.png" class="loginicon Ak-res-img"></div>
+   <div class = "col">  <img src="img/g+.png" class="loginicon Ak-res-img"></div>
+   <div class = "col">  <img src="img/twitter.png" class="loginicon Ak-res-img"></div>
+ <div class = "col"> </div>
+<div class = "col"> </div>
+ </div>
+ <div class="newacntdiv text-center">
+ <button class="button button-stable button-clear Ak-color-fff" ui-sref="auth.signup">
+   Don't have an account? Create One
+</button>
+<!-- </div> -->
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,73 @@
+<ion-view view-title="Profile">
+    <ion-content class="profilebg " scroll="">
+
+<div class="bar no-border bar-header Ak-color-zero col293637">
+   <button class="button icon ion-ios-arrow-left button-clear colfff"  type="submit" ui-sref="auth.login"> </button><span class="profile"></span>
+</div>
+<style type="text/css">
+.profileimgdiv{
+  position:relative;
+}
+  .forAbslte{
+    position:absolute;
+    right:0px;
+  }
+</style>
+        <ion-card>
+            <ion-card-content>
+            <div class="profileimgdiv">
+               <img src="img/unnamed.png" class="profileimg">
+           <!--      <div class="forAbslte">
+                  <img src="img/camera.png">
+                </div> -->
+            </div>
+            </ion-card-content>
+        </ion-card>
+          
+<div class="text-center" ng-model="userInfo"><span class="col6d6d6d font-bold"> Mobile Number:</span>{{userInfo.contactNumber}}</div>
+
+<div class="forprofile margin-lr-20">
+<div class="list no-margin">
+       <div class="item item-input-inset no-border">
+      <div class="item item-input-wrapper">
+ 
+      <input type="text" placeholder="First Name" value="{{userInfo.firstName}}" ng-model="userInfo.firstName" name="firstName" class="profilef">
+     </div></div>
+      <div class="item item-input-inset no-border">
+      <div class="item item-input-wrapper">
+ 
+      <input type="text" placeholder="Last Name" value="{{userInfo.lastName}}"  ng-model="userInfo.lastName" name="lastName" class="profilef">
+     </div></div>
+           <div class="item item-input-inset no-border">
+      <div class="item item-input-wrapper">
+ 
+      <div class="profilef"><span>Email: {{userInfo.mailId}}</span>
+      </div>
+</div>
+   </div>
+
+   <div class="card">
+        <div class="item item-body bgclreee">
+   <textarea rows="6" class="width100p font1 Ak-color-zero col000" type="text" ng-model="userInfo.address"  name="address" placeholder="Address">{{userInfo.address}}</textarea>
+</div>
+   </div>
+    <!--  <div class="item-input margin-tb-10 padding-tb-10 margin-lr-10 bgclreee border-b-1">
+    <textarea placeholder="Address:490 W. Oklahoma St. 
+Ontario, CA 91762" class="padding-tb-20 font1 Ak-color-zero colfff" ng-model="user.message"></textarea></div>
+</div> -->
+</div>
+
+   <div class = "text-center"><button class="button button-dark" ng-click="edit()">
+   Update
+</button></div>
+  <!--  <div class = "col text-right <param name="" value="">dding-r-40"><button class="button button-dark profilebtn">
+   Delete
+</button></div> -->
+  
+ </div>
+</div>
+<br><br><br><br>
+    </ion-content>
+
+ 
+</ion-view>

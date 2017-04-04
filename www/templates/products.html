@@ -1,0 +1,39 @@
+<ion-view view-title="Product listing">
+   <ion-content class="products">
+      <div class="bar bar-subheader bar-dark top-0 no-padding">
+         <div class="list list-inset Ak-color-zero no-padding no-margin top_border content" >
+             <!-- <select class="Ak-color-zero padding-lr-30 padding-tb-10 Ak-color-fff">
+                      <option selected>Search by Category</option>
+                      <option ng-repeat="data in categories" ui-sref="app.products({categoryId:data.id})">{{data.categoryName}}</div>                  
+                  </select> -->
+                    <button class=" fontw-450 colfff Ak-color-zero padding-lr-30 padding-tb-25 Ak-color-fff button button-small button-stable button-clear icon-right ion-android-arrow-dropdown " ng-click="myFunc()"><span class="textsm">Select By Category</span></button>
+                 <div ng-show="showMe" ng-repeat="data in categories" ng-click="myFunc()" ui-sref="app.products({categoryId:data.id})">
+                 <h5 class="customoptions no-margin">{{data.categoryName}}</h5>
+                 </div>
+                         
+         </div>
+      </div>
+     
+
+      <div class="row padding-vhtb-6" style="flex-wrap: wrap">
+         
+         <div class="col col-50" ng-repeat="data in items" ui-sref="app.productdetails({itemsId:data.id})">
+            <!-- <img src="img/shoes1.png" class="product_img" > -->
+            <div class="list card">
+               <div class="item item-body">
+                  <img class="full-image product_img" src="{{imageUrlHome}}{{data.image1}}">
+                  <div class="imgbtmcategory">
+                     <p class="text-center cstm_font1">{{data.productName}}</p>
+                     <p class="text-center cstm_font2">
+                        <a href="#" class="subdued">Price: {{data.sellPrice}}</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div></div>
+
+
+      </ion-card>
+      </ion-card-content>
+   </ion-content>
+</ion-view>

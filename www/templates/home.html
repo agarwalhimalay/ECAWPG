@@ -1,0 +1,73 @@
+
+
+<ion-view view-title="Home">
+  <ion-content class="home" scroll="true">
+
+      <ion-card>
+    <ion-card-content>
+    <div class="home_upper_div">
+    <ion-slide-box>
+    <ion-slide>
+      <img src="img/homeupper.png" class="homeupperimg Ak-res-img">
+      </ion-slide>
+      <ion-slide>
+      <img src="img/homelower.png" class="homelowerimg  Ak-res-img">
+      </ion-slide>
+      </ion-slide-box>
+    </div>
+    </ion-card-content>
+  </ion-card>
+<div class = "row bgwhite customheight1">
+   <div class = "col col-67 padding-r-30 margin-l-30 searchby padding-tb-10">	<h4 class="font-normal line-h-8">&nbsp;&nbsp;&nbsp;&nbsp;Categories</h4></div>
+ 
+   <div class = "col text_right"><a ui-sref="app.category"> <button class="button button-clear icon-right morebtn ion-chevron-right" ><span>More</span> &nbsp;</button></a></div>
+  
+</div>
+
+</ion-card-content>
+  </ion-card>
+
+
+
+<style type="text/css">
+  .for-category{
+
+        background: #e0972a;
+    padding: 34% 0% 34% 0%;
+    text-align: center;
+    color: #fff;
+  }
+   .for-category a{
+    color:#fff;
+    text-decoration:none;
+   }
+</style>
+
+
+
+
+<div class="row no-paddingZero">
+<div class = "col categbg1 no-padding" ng-repeat="data in categories | limitTo:-3 | orderBy:'time':true" ui-sref="app.products({categoryId:data.id})" style="background:url({{imageUrlHome}}{{data.bgImage}})"><a href=""><img src="{{imageUrlHome}}{{data.iconImage}}" class="categoryimgs Ak-res-img1"></a><p class="text-center colfff margintm20"> {{data.categoryName}}</div></p></div>
+  
+<!-- <div class = "row bgwhite customheight1">
+   <div class = "col padding-r-30 margin-l-30 searchby padding-tb-10"> <h4 class="font-normal line-h-8">&nbsp;&nbsp;&nbsp;&nbsp;Deal of the day</h4></div>
+  -->
+  <div class = "row bgwhite customheight1 defaultPAdign">
+   <div class = "col col-67 padding-r-30 margin-l-30 searchby padding-tb-10 setmr"> <h4 class="font-normal line-h-8">&nbsp;&nbsp;&nbsp;&nbsp;Deal of the day</h4></div>
+  
+</div>
+ 
+
+<div class="item item-thumbnail-left thumbnail_height" ng-repeat="data in recentitems | limitTo:-3 | orderBy:'time':true" ui-sref="app.productdetails({itemsId:data.id})">
+      <img src="{{imageUrlHome}}{{data.image1}}">
+      <h2 class="padding-tb-10 padding-lr-10">{{data.ProductName}}</h2>
+      <div ng-repeat="i in [1]">
+      <ionic-ratings ratingsobj='ratingsObject' index='$index'></ionic-ratings>
+      <p><p><h2>&nbsp;&nbsp;{{data.sellPrice|currency:" ₹ "}}</h2>
+    </div>
+   </div>
+</div>
+<br><br><br><br>
+  </ion-content>
+
+</ion-view>

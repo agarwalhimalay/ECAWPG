@@ -1,0 +1,60 @@
+<ion-view view-title="Products Details">
+  <ion-content class="productdetai">
+
+   
+                 
+    <!--     <select class="Ak-color-zero padding-lr-30 padding-tb-10 Ak-color-fff" >"Ak-color-zero padding-lr-30 padding-tb-10 Ak-color-fff"
+                      <option selected>Search by Category</option>
+                      <option value="" ng-repeat="data in categories" ng-change="app.products({categoryId:data.id})">{{data.categoryName}}</option>              
+                  </select>
+                 -->
+            
+
+   
+<!-- <div class="content padding-tb-30"></div>
+  <div class="item item-body text-center">
+  <div class = "row">
+   <div class = "col text-center">
+   <select class=" padding-lr-30 padding-tb-10">
+                      <option selected>Size</option>
+                      <option value="small" >small</option>
+                      <option value="medium">medium</option>
+                      <option value="Large">large</option>                      
+                  </select>
+
+                  </div>
+   <div class = "col text-center">
+   <select class=" padding-lr-30 padding-tb-10 ">
+                      <option selected>Color</option>
+                      <option value="Black" >Black</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Red">Red</option>                      
+                  </select></div>
+
+   </div> -->
+
+<div class="padding-tb-80" ng-repeat="data in itemdetail" >
+<ion-slide-box>
+<ion-slide>
+ <img src="{{imageUrlHome}}{{data.image1}}" class="Ak-res-img width-50"></ion-slide>
+ <ion-slide>
+ <img src="{{imageUrlHome}}{{data.image2}}" class="Ak-res-img width-50"></ion-slide>
+ <ion-slide>
+ <img src="{{imageUrlHome}}{{data.image3}}" class="Ak-res-img width-50"></ion-slide>
+   </ion-slide-box></div>
+   <div class="bottmset">
+<div class="margin-tb-30"></div>
+<div class="card no-padding no-margin" ng-repeat="data in itemdetail">
+<div class="item item-text-wrap">
+    <div class = "row">
+   <div class = "col"><span class="customfont3">{{data.productName}}</span></div>
+   <div class = "col text-right subdued">{{data.sellPrice| currency:  " ₹ "}}</div>
+
+   </div>
+<div class="col text-left"> <h3>Product Details : </h3></div>
+     <div class="col text-left"> <h4>{{data.description}}</h4></div>
+   </div>
+   </div>
+</div>
+  </ion-content>
+</ion-view>
